@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	
+   <ThingDef ParentName="ResourceBase">
+    <defName>PlaceholderSolarPower</defName>
+    <label>solar power</label>
+    <description>Why are you here? This should be not obtainable!</description>
+    <graphicData>
+      <texPath>Fallback</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+      <MarketValue>0</MarketValue>
+      <Mass>0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+	
+
+</Defs>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+	
+  <ThingDef ParentName="ApparelNoQualityBase" Name="OrbitalUtilityBase" Abstract="True">
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.2</Mass>
+      <Beauty>-3</Beauty>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <tickerType>Normal</tickerType>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <apparel>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+	
+	<ThingDef ParentName="OrbitalUtilityBase">
+		<defName>InfestationCreater</defName>
+		<label>infestation wave creater</label>
+		<description>Creates infestation</description>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.2</Mass>
+      <Beauty>-3</Beauty>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<researchPrerequisites>
+		<li>Research_InfestationApparel</li>
+	</researchPrerequisites>
+    <graphicData>
+      <texPath>InfestationCreater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<apparel>
+		
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			
+		<wornGraphicPath>InfestationCreater</wornGraphicPath>
+		<wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+		
+			<north>
+			<male>  <offset>(0.25, -0.25)</offset> </male>
+			<female><offset>(0.25,-0.25)</offset> </female>
+			<thin>  <offset>(0.15,-0.25)</offset> </thin>
+			<hulk>  <offset>(0.25,-0.3)</offset> </hulk>
+			<fat>   <offset>(0.45,-0.25)</offset> </fat>
+			</north>
+        <south>
+          <male>  <offset>(-0.3, -0.25)</offset> </male>
+          <female><offset>(-0.3,-0.25)</offset> </female>
+          <thin>  <offset>(-0.2,-0.25)</offset> </thin>
+          <hulk>  <offset>(-0.3,-0.3)</offset> </hulk>
+          <fat>   <offset>(-0.5,-0.25)</offset> </fat>
+        </south>
+        <east>
+			<male>  <offset>(0.25, -0.25)</offset> </male>
+			<female><offset>(0.25,-0.25)</offset> </female>
+			<thin>  <offset>(0.15,-0.25)</offset> </thin>
+			<hulk>  <offset>(0.25,-0.3)</offset> </hulk>
+			<fat>   <offset>(0.45,-0.25)</offset> </fat>
+			</east>
+
+        <male>  <scale>(0.4,0.4)</scale> </male>
+        <female><scale>(0.4,0.4)</scale> </female>
+        <thin>  <scale>(0.4,0.4)</scale> </thin>
+        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
+        <fat>   <scale>(0.4,0.4)</scale> </fat>
+      </wornGraphicData>
+		</apparel>
+		
+		<verbs>
+      <li>
+        <verbClass>AntiInfestation.Verb_InfestationLure</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3</warmupTime>
+        <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+		<range>50</range>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+		<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>2</maxCharges>
+        <destroyOnEmpty>false</destroyOnEmpty>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		<ammoCountPerCharge>1</ammoCountPerCharge>
+		<ammoDef>PlaceholderSolarPower</ammoDef>
+      </li>
+    </comps>
+	<tickerType>Long</tickerType>
+			<thingClass>AntiInfestation.Thing_InfestationLure</thingClass>
+	</ThingDef>
+	
+	
+</Defs>

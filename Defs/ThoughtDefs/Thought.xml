@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThoughtDef>
+    <defName>MoodDecreaseDueToWaves</defName>
+	<workerClass>AntiInfestation.ThoughtWorkers.ThoughtWorker_InfestationPreventerDisturbance</workerClass>
+    <stages>
+      <li>
+        <label>strong psychic waves</label>
+        <description>I hear a strange whisper. I dont like that...</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>  
