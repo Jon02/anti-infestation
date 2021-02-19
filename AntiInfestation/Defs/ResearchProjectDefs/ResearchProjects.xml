@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Research_WaveGeneratorOne</defName>
+    <label>Psychic Wave Generator Tier 1</label>
+    <description>Research into the basics of manipulating insects with psychic waves.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+	<tab>AntiInfestation</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>Research_WaveGeneratorTwo</defName>
+    <label>Psychic Wave Generator Tier 2</label>
+    <description>Improve the performance of the latest tier and develop a way so that the waves can pass through walls!</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+	<tab>AntiInfestation</tab>
+	<prerequisites>
+      <li>Research_WaveGeneratorOne</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>Research_InfestationApparel</defName>
+    <label>Infestation Wave Creater</label>
+    <description>Use your gained knowledge to develop a way to center a psychic wave to a point so an infestation will occur!</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+	<tab>AntiInfestation</tab>
+	<prerequisites>
+      <li>Research_WaveGeneratorTwo</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>Research_InfestationSpawner</defName>
+    <label>A strange satellite\n</label>
+    <description>One evening, your research detected a strange signal at the comps console. After some research it turned out to be satellite in orbit! One you hacked into it, the satellite opened a telnet connection. After some hard work you found out it was a giant psychic wave generator and turned out to do the same thing you were researching all the time. Creating infestations... \n\n Your research quickly programmed a graphical user interface that he calls the "Satellite Terminal" so that every idotic colonist can operate the satellite!</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+	<tab>AntiInfestation</tab>
+	<prerequisites>
+      <li>Research_InfestationApparel</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>Research_InfestationPreventer</defName>
+    <label>A mysterious blueprint</label>
+    <description>While you where searching through the files of the satellite you stumbled on an odd blueprint that seemed to be encrypted. After you finally managed to decrypt it you found a blueprint for a giant psychic wave generator! It seems to be strong enough to affect every insect on the map... even undergrounds...</description>
+    <baseCost>8000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+	<tab>AntiInfestation</tab>
+	<prerequisites>
+      <li>Research_InfestationSpawner</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>HackEngineControls</defName>
+    <label>Hack engine controls\n</label>
+    <description>Your researcher found out that you can hack into the control system of the engines so it always stays in range with your sender! Unfortunately, the satellite has a built-in spam protection so you can only send an attack request every 10 hours...</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3.10</researchViewY>
+	<tab>AntiInfestation</tab>
+	<prerequisites>
+      <li>Research_InfestationSpawner</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>  
