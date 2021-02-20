@@ -52,10 +52,6 @@
         <glowRadius>6</glowRadius>
         <glowColor>(115,198,206,0)</glowColor>
       </li>
-	  <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>20</heatPerSecond>
-      </li>
 	</comps>
 	<tickerType>Rare</tickerType>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
@@ -151,10 +147,6 @@
       <Plasteel>20</Plasteel>
     </costList>
     <comps>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>20</heatPerSecond>
-      </li>
 	  <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>1600</basePowerConsumption>
@@ -180,8 +172,8 @@
     <label>Infestation Preventer</label>
     <hasInteractionCell>false</hasInteractionCell>
 	<graphicData>
-      <texPath>LongRangeInfestationSpawner</texPath>
-      <drawSize>(6,6)</drawSize>
+      <texPath>InfestationPreventer</texPath>
+      <drawSize>(59,5.9)</drawSize>
     </graphicData>
     <size>(6,6)</size>
     <statBases>
@@ -199,10 +191,6 @@
 	  <Apparel_PsychicInsanityLance>8</Apparel_PsychicInsanityLance>
     </costList>
     <comps>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>20</heatPerSecond>
-      </li>
 	  <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>12000</basePowerConsumption>
