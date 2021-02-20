@@ -173,7 +173,7 @@
     <hasInteractionCell>false</hasInteractionCell>
 	<graphicData>
       <texPath>InfestationPreventer</texPath>
-      <drawSize>(59,5.9)</drawSize>
+      <drawSize>(5.9,5.9)</drawSize>
     </graphicData>
     <size>(6,6)</size>
     <statBases>
