@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Targeting-->
+	<AttackAllyOrNeutral>Willst du wirklich eine neutrale/verbündete Fraktion angreifen? Wenn du die Attack startest wird die Fraktion sofort feindlich zu deiner sein!</AttackAllyOrNeutral>
+	<AttackOwnFaction>Willst du wirklich dein eignes zuhause angreifen?</AttackOwnFaction>
+	
+	<!--Countdowns-->
+	<TimeUntilNextAttackLaunch>Zeit bis nächste Attacke gestartet werden kann: {0}h </TimeUntilNextAttackLaunch>
+	<TimeUntilSatelliteInRange>Zeit bis Satellit in Reichweite ist: {0}h </TimeUntilSatelliteInRange>
+	<TimeUntilSatelliteOutOfRange>Zeit bis Satellit aus der Reichweite ist: {0}h </TimeUntilSatelliteOutOfRange>
+	<SatelliteNowInRange>Der Satellit ist jetzt in Reichweite! Du hast 24h Zeit um eine Attacke zu starten.</SatelliteNowInRange>
+	<NewAttackLaunchNow>Du kannst jetzt eine neue Attacke starten!</NewAttackLaunchNow>
+	
+	<!--Place Worker-->
+	<CannotPlaceBecauseBuildingExistsOnMap>Es gibt bereits einen {0} auf der Map!</CannotPlaceBecauseBuildingExistsOnMap>
+	<CannotPlaceBecauseBlueprintExistsOnMap>Es gibt bereits eine Blaupause von {0} auf der Map!</CannotPlaceBecauseBlueprintExistsOnMap>
+	
+	<!--Gizmos-->
+	<SatelliteOutOfRange>Der Satellit ist nicht in Reichweite oder du kannst keine Attacke starten wegen dem Spamschutz!</SatelliteOutOfRange>
+
+	<!--Status Terminal-->
+	<PositionNotSet>Status: Position nicht gesetzt!</PositionNotSet>
+	<ReadyToAttack>Status: Bereit zum Angriff!</ReadyToAttack>
+	<PositioningSatellite>Status: Satellit wird ausgerichtet.</PositioningSatellite>
+	<AttackCanceled>Die Attacke wurde abgebrochen</AttackCanceled>
+</LanguageData>

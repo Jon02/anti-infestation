@@ -188,7 +188,7 @@
 	  <ComponentSpacer>6</ComponentSpacer>
       <Plasteel>50</Plasteel>
 	  <Gold>25</Gold>
-	  <Apparel_PsychicInsanityLance>8</Apparel_PsychicInsanityLance>
+	  <Apparel_PsychicInsanityLance>10</Apparel_PsychicInsanityLance>
     </costList>
     <comps>
 	  <li Class="CompProperties_Power">
@@ -200,6 +200,11 @@
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
         <glowColor>(115,198,206,0)</glowColor>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>20</heatPerSecond>
+        <heatPushMaxTemperature>90</heatPushMaxTemperature>
       </li>
     </comps>
     <tickerType>Rare</tickerType>

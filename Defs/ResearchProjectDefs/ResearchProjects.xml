@@ -57,7 +57,7 @@
   <ResearchProjectDef>
     <defName>Research_InfestationPreventer</defName>
     <label>A mysterious blueprint</label>
-    <description>While you where searching through the files of the satellite you stumbled on an odd blueprint that seemed to be encrypted. After you finally managed to decrypt it you found a blueprint for a giant psychic wave generator! It seems to be strong enough to affect every insect on the map... even undergrounds...</description>
+    <description>While you were searching through the files of the satellite you stumbled upon an odd blueprint that seemed to be encrypted. After you finally managed to decrypt it you found a blueprint for a giant psychic wave generator! It seems to be strong enough to affect every insect on the map, even undergrounds! But due to the high psychic waves it creates a whispering that your colonists can hear.</description>
     <baseCost>8000</baseCost>
     <techLevel>Spacer</techLevel>
     <researchViewX>5.00</researchViewX>
